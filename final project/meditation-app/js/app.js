@@ -76,7 +76,7 @@ function renderRemainingTime(timeInSec) {
   let min = Math.floor(timeInSec / 60);
   let sec = Math.floor(timeInSec % 60);
 
-  // IF min/sec is a single digit(ex:9) we add a zero to the beginning of the digit. (ex: 9 becomes 09)
+  // IF min/sec is a single digit(ex:9) we add a zero before the digit. (ex: 9 becomes 09)
   min = min < 10 ? `0${min}` : min;
   sec = sec < 10 ? `0${sec}` : sec;
 
